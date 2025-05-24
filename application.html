@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply to join Timedrift as a Creator.">
+  <title>Apply - Timedrift</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <a href="index.html" class="logo-link">Timedrift Collective</a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#application">How It Works</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="application.html" class="nav-apply">Apply</a>
+      </nav>
+      <div class="mobile-menu-icon" id="mobile-menu-toggle">&#9776;</div>
+    </div>
+    <div class="mobile-nav-links" id="mobile-nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#application">How It Works</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="application.html" class="nav-apply">Apply</a>
+    </div>
+  </header>
+
+  <!-- Application Form Section -->
+  <section id="application-form" class="content-section fade-in-section">
+    <div class="application-form-wrapper">
+
+      <div class="application-header">
+        <h1>Timedrift Creator Application</h1>
+        <p>Creators who join Timedrift are full-time employees with a salary, building projects independently with light central support. You will be the primary driver of your project's success.</p>
+        <a href="index.html" class="close-button">×</a>
+      </div>
+
+      <form action="https://formspree.io/f/mwpovrpn?redirect=https://timedrift.net/thank-you.html" method="POST">
+
+        <!-- Section 0: Contact Information -->
+        <div class="form-section">
+          <h2 class="section-heading">Let's Connect</h2>
+
+          <div class="form-group">
+            <label for="legal-name">Name</label>
+            <input type="text" id="legal-name" ... placeholder="Jane Doe">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" ... placeholder="janedoe@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="portfolio">Portfolio / Main Online Profile</label>
+            <input type="url" id="portfolio" ... placeholder="https://timedrift.net">
+          </div>
+
+          <div class="form-group">
+            <label for="discord-handle">Discord Handle (Optional)</label>
+            <input type="text" id="discord-handle" ... placeholder="janedev#1234">
+          </div>
+        </div>
+
+        <!-- Section 1: Creator Information -->
+        <div class="form-section">
+          <h2 class="section-heading">About You</h2>
+
+          <div class="form-group">
+            <label for="location">Location (City, Country)</label>
+            <input type="text" id="location" ... placeholder="San Francisco, USA">
+          </div>
+
+          <div class="form-group">
+            <label for="skills">Primary Skills (e.g., Programming, Art, Design)</label>
+            <input type="text" id="skills" ... placeholder="Game Design, Product Management">
+          </div>
+
+          <div class="form-group">
+            <label for="experience">Years of Active Game Development</label>
+            <input type="text" id="skills" ... placeholder="1-2 years">
+          </div>
+        </div>
+
+        <!-- Section 2: How You Work -->
+        <div class="form-section">
+          <h2 class="section-heading">How You Work</h2>
+
+          <div class="form-group">
+            <label for="work-style-description">Explain how you use your skills — including any AI tools — to accelerate your solo development process. (2–4 sentences)</label>
+            <textarea id="work-style-description" ... placeholder="Here's how I like to work on projects..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="why-games">Why do you make games?</label>
+            <textarea id="why-games" ... placeholder="Here's why I like working on games..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="success">What does success look like for you in your next project and how does this differ from past projects?</label>
+            <textarea id="success" ... placeholder="Here's what I think success is..."></textarea>
+          </div>
+        </div>
+
+        <!-- Section 3: Project Proposal -->
+        <div class="form-section">
+          <h2 class="section-heading">Project Proposal</h2>
+
+          <div class="form-group">
+            <label for="project-summary">Give us your elevator pitch for a game you want to make.</label>
+            <textarea id="project-summary" name="project-summary" rows="4" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="core-loop">What is the core gameplay loop or mechanic? Is this present in another existing game?</label>
+            <textarea id="core-loop" name="core-loop" rows="3" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="unique-selling">What’s the unique selling point of this project? Who do you think will play this?</label>
+            <textarea id="unique-selling" name="unique-selling" rows="3" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="personal-excitement">Why is this going to be successful in the current game market?</label>
+            <textarea id="personal-excitement" name="personal-excitement" rows="3" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="mockup-upload">(Optional) Upload or link a rough sketch or short gameplay description.</label>
+            <input type="url" id="mockup-upload" name="mockup-upload">
+          </div>
+        </div>
+
+        <!-- Section 4: Anything Else -->
+        <div class="form-section">
+          <h2 class="section-heading">Anything Else?</h2>
+
+          <div class="form-group">
+            <label for="anything-else">Anything else you'd like us to know?</label>
+            <textarea id="anything-else" name="anything-else" rows="4"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary">Submit Application</button>
+
+      </form>
+
+      <div style="margin-top: 2rem;">
+        <a href="index.html" class="btn-secondary">Back to Home</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="fade-in-section">
+    <p>© 2025 Timedrift. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scroll-animations.js"></script>
+  <script src="mobile-menu.js"></script>
+
+</body>
+</html>
