@@ -1,5 +1,12 @@
 :root {
     --accent-color: #d4af37;
+    --content-max-width: 960px;
+}
+
+.container {
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 form {
@@ -188,7 +195,8 @@ p, li {
 }
 
 .hero-content {
-    max-width: 700px;
+    max-width: var(--content-max-width);
+    margin: 0 auto;
     position: relative;
     z-index: 2;
 }
@@ -228,8 +236,9 @@ p, li {
 }
 
 /* Sections */
+
 .content-section {
-    padding: 7rem 2rem;
+    padding: 7rem 0;
     text-align: center;
 
     /* Scroll Snap */
@@ -313,7 +322,7 @@ footer {
 
 .application-form-wrapper {
     position: relative;
-    max-width: 600px;
+    max-width: var(--content-max-width);
     margin: 0 auto;
 }
 
@@ -382,7 +391,7 @@ footer {
 .job-table {
     width: 100%;
     border-collapse: collapse;
-    max-width: 800px;
+    max-width: var(--content-max-width);
     margin: 3rem auto 2rem auto;
     background: #111;
     border-radius: 10px;
@@ -433,7 +442,7 @@ footer {
 }
 
 .job-description {
-    max-width: 700px;
+    max-width: var(--content-max-width);
     padding: 7rem 1.5rem 4rem 1.5rem;
     margin: 0 auto;
     text-align: left;
@@ -498,7 +507,7 @@ footer {
     }
 
     .content-section {
-        padding: 4rem 1rem;
+        padding: 4rem 0;
     }
 
     .services,
