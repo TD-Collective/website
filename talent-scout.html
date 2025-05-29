@@ -5,17 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Join Timedrift as a Talent Scout">
   <title>Talent Scout - Timedrift Collective</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <!-- Navigation -->
   <header class="navbar">
     <div class="navbar-container">
       <div class="logo">
         <a href="index.html" class="logo-link">Timedrift Collective</a>
       </div>
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Main navigation">
         <a href="index.html#about">About</a>
         <a href="index.html#application">How It Works</a>
         <a href="index.html#faq">FAQ</a>
@@ -26,7 +29,7 @@
   </header>
 
   <!-- Job Description -->
-  <section class="job-description">
+  <section id="main-content" class="job-description">
     <h2>Talent Scout (Part-Time – Remote, Summer 2025)</h2>
 
     <p>
@@ -76,7 +79,7 @@
 
     <p>
         Send your message to:  
-        <a href="mailto:ben@timedrift.net?subject=Talent%20Scout%20Application" style="color: #d4af37; font-weight: bold;">ben@timedrift.net</a>
+        <a href="mailto:ben@timedrift.net?subject=Talent%20Scout%20Application" style="color: var(--accent-color); font-weight: bold;">ben@timedrift.net</a>
     </p>
 
     <p style="margin-top: 2rem; font-size: 0.9rem; color: #aaa;">
@@ -90,8 +93,8 @@
     <p>© 2025 Timedrift Collective. All Rights Reserved.</p>
   </footer>
 
-  <script src="scroll-animations.js"></script>
-  <script src="mobile-menu.js"></script>
+  <script src="scroll-animations.js" defer></script>
+  <script src="mobile-menu.js" defer></script>
 
 </body>
 </html>

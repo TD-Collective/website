@@ -5,26 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Build your dream game full-time with Timedrift Collective.">
   <title>Timedrift Collective</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <!-- Navigation Bar -->
   <header class="navbar">
     <div class="navbar-container">
       <div class="logo">
-        <a href="#hero" class="logo-link">Timedrift Collective</a>
+        <a href="#main-content" class="logo-link">Timedrift Collective</a>
       </div>
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#application">How It Works</a>
         <a href="#faq">FAQ</a>
         <a href="jobs.html">Jobs</a>
         <a href="application.html" class="nav-apply">Apply</a>
       </nav>
-      <div class="mobile-menu-icon" id="mobile-menu-toggle">&#9776;</div>
+      <button class="mobile-menu-icon" id="mobile-menu-toggle" aria-controls="mobile-nav-links" aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
     </div>
-    <div class="mobile-nav-links" id="mobile-nav-links">
+    <div class="mobile-nav-links" id="mobile-nav-links" aria-hidden="true">
       <a href="#about">About</a>
       <a href="#application">How It Works</a>
       <a href="#faq">FAQ</a>
@@ -34,13 +37,13 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="hero" class="hero">
+  <section id="main-content" class="hero">
     <div class="hero-content">
-        <h1>Dream it. Build it. Own it.</h1>
-        <p>We’re Timedrift — a home for solo creators building original games.<br>We offer salary, structure, and support so you can focus on what matters: making something great.</p>
+        <h1>You’re the Game Director. We’re the Studio.</h1>
+        <p>Timedrift Collective hires solo game developers to lead original titles — full-time. You bring the vision, the hands, and the creative fire. We bring salary, structure, and a support team to help you ship successfully.</p>
         <div class="hero-buttons">
-        <a href="application.html" class="btn-primary">Start Building</a>
-        <a href="#about" class="btn-secondary">How Timedrift Works</a>
+        <a href="application.html" class="btn-primary">Apply Now</a>
+        <a href="#about" class="btn-secondary">How Our Studio Works</a>
         </div>
     </div>
   </section>
@@ -48,93 +51,101 @@
   <!-- About Section -->
   <section id="about" class="content-section fade-in-section">
     <h2>About Timedrift</h2>
-    <p>Solo creators are building the most original games today — but the system isn’t built for them.<br><br>Timedrift is a new model: full-time support for bold, independent developers using modern tools to move fast and build smart.<br>We give solo creators what the industry won’t — funding, focus, and the space to lead their own vision.</p>
-  
-    <ul class="centered-list">
-      <li>Full-time salary, milestone structure, and creative freedom.</li>
-      <li>You lead your project — we help you move faster.</li>
-      <li>Support, not supervision. Acceleration, not interference.</li>
-    </ul>
-    <br>
-    <p>Your game. Your vision. Your name on the credits.<br>With real backing, not empty promises.</p>
+    <h3>A Studio Built Around You</h3>
+    <p>Most studios revolve around teams. We’re building a studio around individual creators.</p>
+    <p>Timedrift is a new kind of game studio for a new kind of developer — one who works fast, stays small, and builds smart using modern AI tools. We don’t invest in game pitches. We hire the people who can lead them.</p>
+    <p>When you join Timedrift, you become the Game Director of your own project. You’ll work full-time — with salary, benefits, and vision control — while we support you in shaping and shipping the game you want to make.</p>
+    <p>You’d be doing the work anyway. Now you’ll get the structure and support to go further, faster.</p>
   </section>
-  
 
   <!-- How It Works Section -->
   <section id="application" class="content-section fade-in-section">
-    <h2>How It Works</h2>
+    <h2>Studio Model</h2>
+    <h3>How It Works</h3>
     <div class="steps">
       <div class="step">
-        <h3>Apply</h3>
-        <p>Show us what you’ve built, what you dream about, and what you want to create next.</p>
+        <h3>Apply to Join</h3>
+        <p>Tell us about yourself, what you’ve built, and what kind of game you want to lead.</p>
       </div>
       <div class="step">
-        <h3>Join Timedrift</h3>
-        <p>Come on board full-time with salary, benefits, and the creative space to build your best work.</p>
+        <h3>Get Hired Full-Time</h3>
+        <p>If it’s a fit, we bring you on as a full-time Game Director. You earn a salary and benefits from day one.</p>
       </div>
       <div class="step">
-        <h3>Build + Launch</h3>
-        <p>Ship a game in 9–12 months. Scale it, pivot it, or start fresh — no penalties, just momentum.</p>
+        <h3>Shape the Vision</h3>
+        <p>You’ll define the game you want to build — with collaborative support from us to shape, scope, and validate it along the way.</p>
+      </div>
+      <div class="step">
+        <h3>Build with Modern Tools</h3>
+        <p>Use AI, off-the-shelf systems, and streamlined workflows to move quickly and execute with focus and autonomy.</p>
+      </div>
+      <div class="step">
+        <h3>Ship and Share the Win</h3>
+        <p>Most games aim to launch in 9–12 months. When yours ships, we share in the outcome — including the revenue it earns.</p>
       </div>
     </div>
-    <a href="application.html" class="btn-primary">Start Building</a>
+    <a href="application.html" class="btn-primary">Apply Now</a>
   </section>
 
-  <!-- Who We're Looking For Section -->
+  <!-- Who We're Hiring Section -->
   <section class="content-section fade-in-section">
-    <h2>Who We're Looking For</h2>
-    <p>We’re building a collective of creators who are:</p>
+    <h2>Who We’re Hiring</h2>
+    <h3>You Own the Work — and the Vision</h3>
+    <p>We’re looking for creators who are ready to take the lead — not just build a game, but direct one entirely on their own, with our light-touch support behind the scenes.</p>
+    <p>You might be a fit if:</p>
     <ul class="centered-list">
-        <li><b>Craft-Driven:</b> You’d rather build than just talk about games.</li>
-        <li><b>Proven:</b> You've shipped something — a game, prototype, or project you’re proud of.</li>
-        <li><b>Ambitious + Focused:</b> Big dreams. Fast hands. One mind.</li>
-        <li><b>Independent, Not Isolated:</b> You own your vision and welcome light support.</li>
-        <li><b>Excited About New Tools:</b> You see AI as a boost, not a shortcut.</li>
-      </ul>
-      <p>Not sure if you’re a perfect fit?<br>Hit us up anyway — great things start with a good conversation.</p>
+        <li>You’ve shipped something on your own — a prototype, game jam entry, or commercial title.</li>
+        <li>You want to stay small, work fast, and focus deeply.</li>
+        <li>You’re comfortable taking responsibility for both vision and execution.</li>
+        <li>You view AI as a force multiplier that gives you superpowers.</li>
+        <li>You’re ready to work full-time and go all in.</li>
+    </ul>
+    <p>Not sure if you're a perfect fit? Reach out anyway. Some of the best collaborations start with a simple conversation.</p>
   </section>
 
-  <!-- Support Team Recruiting Section -->
+  <!-- Support Roles Section -->
   <section class="content-section fade-in-section">
-    <h2>Support Built for Solo Creators</h2>
-    <p>Timedrift isn't just funding — it's focus. Our creative support team helps tie up loose ends, smooth out development, and free you to build at full speed.<br><br>If you're an experienced dev who knows how to back great creators without steering the ship, we’re growing our support team too.</p>
+    <h2>Support Roles</h2>
+    <h3>Help Solo Creators Move Fast</h3>
+    <p>Timedrift isn’t built around traditional departments — but we do hire experienced devs to support solo creators behind the scenes.</p>
+    <p>If you’ve shipped games and know how to support others without taking over, you might be a fit for our creative support team. These roles help solo creators sustain momentum — assisting with polish, testing, content tuning, and anything else that lets the game ship strong.</p>
     <a href="jobs.html" class="btn-secondary">Learn About Support Roles</a>
   </section>
 
   <!-- FAQ Section -->
   <section id="faq" class="content-section fade-in-section">
-    <h2>Frequently Asked Questions</h2>
+    <h2>FAQ</h2>
 
     <div class="faq-item">
-      <h3>What kinds of projects does Timedrift back?</h3>
-      <p>Original, solo-led games with a clear creative spark — and the chops to pull it off.</p>
+      <h3>Is this freelance or a job?</h3>
+      <p>Full-time employment. You’ll be on payroll, with benefits, working as the Game Director of your own title.</p>
     </div>
-    
+
     <div class="faq-item">
-      <h3>Do creators keep control of their games?</h3>
-      <p>Yes. It’s your vision. We back you — we don’t own you.</p>
+      <h3>Do I need a complete game idea to apply?</h3>
+      <p>No. We’re hiring people, not pitches. We’ll shape the right game together once you’re onboard.</p>
     </div>
-    
+
     <div class="faq-item">
-      <h3>What does backing include?</h3>
-      <p>Salary, benefits, milestone support, publishing help, launch help — and real creative freedom.</p>
+      <h3>What happens if the project fails or needs to pivot?</h3>
+      <p>No penalties. We work together to restart or evolve the idea. You’re still salaried and supported.</p>
     </div>
-    
+
     <div class="faq-item">
-      <h3>What if a project doesn’t work out?</h3>
-      <p>No penalties. We pivot, restart, or build the next shot — together.</p>
+      <h3>How long do I get to build?</h3>
+      <p>We aim to ship in 9–12 months, but timelines flex based on scope and quality. The goal is to finish — not flounder.</p>
     </div>
-    
+
     <div class="faq-item">
-      <h3>Is this freelance or full-time?</h3>
-      <p>Full-time employment — with salary, benefits, and space to build your best work.</p>
+      <h3>What’s the pay like?</h3>
+      <p>We offer competitive salary, benefits, and revenue share. It’s not a freelance gig or a profit-share-only promise — it’s a real job.</p>
     </div>
-    
+
     <div class="faq-item">
-      <h3>How selective is Timedrift?</h3>
-      <p>Selective — but human. If you’re serious about your craft, we want to hear your story.</p>
+      <h3>How selective is this?</h3>
+      <p>We’re looking for strong solo builders, but we’re not trying to be exclusive for its own sake. If you’ve got execution chops and a strong perspective, we want to talk.</p>
     </div>
-  
+
   </section>
 
   <!-- Footer -->
@@ -148,8 +159,8 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="scroll-animations.js"></script>
-  <script src="mobile-menu.js"></script>
+  <script src="scroll-animations.js" defer></script>
+  <script src="mobile-menu.js" defer></script>
 
 </body>
 </html>

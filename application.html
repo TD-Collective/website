@@ -5,26 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Apply to join Timedrift as a Creator.">
   <title>Apply - Timedrift</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <!-- Navigation Bar -->
   <header class="navbar">
     <div class="navbar-container">
       <div class="logo">
         <a href="index.html" class="logo-link">Timedrift Collective</a>
       </div>
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Main navigation">
         <a href="index.html#about">About</a>
         <a href="index.html#application">How It Works</a>
         <a href="index.html#faq">FAQ</a>
         <a href="jobs.html">Jobs</a>
         <a href="application.html" class="nav-apply">Apply</a>
       </nav>
-      <div class="mobile-menu-icon" id="mobile-menu-toggle">&#9776;</div>
+      <button class="mobile-menu-icon" id="mobile-menu-toggle" aria-controls="mobile-nav-links" aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
     </div>
-    <div class="mobile-nav-links" id="mobile-nav-links">
+    <div class="mobile-nav-links" id="mobile-nav-links" aria-hidden="true">
       <a href="index.html#about">About</a>
       <a href="index.html#application">How It Works</a>
       <a href="index.html#faq">FAQ</a>
@@ -34,7 +37,7 @@
   </header>
 
   <!-- Application Form Section -->
-  <section id="application-form" class="content-section fade-in-section">
+  <section id="main-content" class="content-section fade-in-section">
     <div class="application-form-wrapper">
 
       <div class="application-header">
@@ -51,22 +54,22 @@
 
           <div class="form-group">
             <label for="legal-name">Name</label>
-            <input type="text" id="legal-name" ... placeholder="Jane Doe">
+            <input type="text" id="legal-name" name="legal-name" required placeholder="Jane Doe">
           </div>
 
           <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" id="email" ... placeholder="janedoe@example.com">
+            <input type="email" id="email" name="email" required placeholder="janedoe@example.com">
           </div>
 
           <div class="form-group">
             <label for="portfolio">Portfolio / Main Online Profile</label>
-            <input type="url" id="portfolio" ... placeholder="https://timedrift.net">
+            <input type="url" id="portfolio" name="portfolio" required placeholder="https://timedrift.net">
           </div>
 
           <div class="form-group">
             <label for="discord-handle">Discord Handle (Optional)</label>
-            <input type="text" id="discord-handle" ... placeholder="janedev#1234">
+            <input type="text" id="discord-handle" name="discord-handle" placeholder="janedev#1234">
           </div>
         </div>
 
@@ -76,17 +79,17 @@
 
           <div class="form-group">
             <label for="location">Location (City, Country)</label>
-            <input type="text" id="location" ... placeholder="San Francisco, USA">
+            <input type="text" id="location" name="location" required placeholder="San Francisco, USA">
           </div>
 
           <div class="form-group">
             <label for="skills">Primary Skills (e.g., Programming, Art, Design)</label>
-            <input type="text" id="skills" ... placeholder="Game Design, Product Management">
+            <input type="text" id="skills" name="skills" required placeholder="Game Design, Product Management">
           </div>
 
           <div class="form-group">
             <label for="experience">Years of Active Game Development</label>
-            <input type="text" id="skills" ... placeholder="1-2 years">
+            <input type="text" id="experience" name="experience" required placeholder="1-2 years">
           </div>
         </div>
 
@@ -96,17 +99,17 @@
 
           <div class="form-group">
             <label for="work-style-description">Explain how you use your skills — including any AI tools — to accelerate your solo development process. (2–4 sentences)</label>
-            <textarea id="work-style-description" ... placeholder="Here's how I like to work on projects..."></textarea>
+            <textarea id="work-style-description" name="work-style-description" rows="3" required placeholder="Here's how I like to work on projects..."></textarea>
           </div>
 
           <div class="form-group">
             <label for="why-games">Why do you make games?</label>
-            <textarea id="why-games" ... placeholder="Here's why I like working on games..."></textarea>
+            <textarea id="why-games" name="why-games" rows="3" required placeholder="Here's why I like working on games..."></textarea>
           </div>
 
           <div class="form-group">
             <label for="success">What does success look like for you in your next project and how does this differ from past projects?</label>
-            <textarea id="success" ... placeholder="Here's what I think success is..."></textarea>
+            <textarea id="success" name="success" rows="3" required placeholder="Here's what I think success is..."></textarea>
           </div>
         </div>
 
@@ -166,8 +169,8 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="scroll-animations.js"></script>
-  <script src="mobile-menu.js"></script>
+  <script src="scroll-animations.js" defer></script>
+  <script src="mobile-menu.js" defer></script>
 
 </body>
 </html>

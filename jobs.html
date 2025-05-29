@@ -5,26 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Careers at Timedrift Collective.">
   <title>Jobs - Timedrift Collective</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <!-- Navigation Bar -->
   <header class="navbar">
     <div class="navbar-container">
       <div class="logo">
         <a href="index.html" class="logo-link">Timedrift Collective</a>
       </div>
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Main navigation">
         <a href="index.html#about">About</a>
         <a href="index.html#application">How It Works</a>
         <a href="index.html#faq">FAQ</a>
         <a href="jobs.html">Jobs</a> <!-- Jobs link -->
         <a href="application.html" class="nav-apply">Apply</a>
       </nav>
-      <div class="mobile-menu-icon" id="mobile-menu-toggle">&#9776;</div>
+      <button class="mobile-menu-icon" id="mobile-menu-toggle" aria-controls="mobile-nav-links" aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
     </div>
-    <div class="mobile-nav-links" id="mobile-nav-links">
+    <div class="mobile-nav-links" id="mobile-nav-links" aria-hidden="true">
       <a href="index.html#about">About</a>
       <a href="index.html#application">How It Works</a>
       <a href="index.html#faq">FAQ</a>
@@ -34,30 +37,32 @@
   </header>
 
   <!-- Jobs Section -->
-  <section id="jobs" class="content-section fade-in-section">
+  <section id="main-content" class="content-section fade-in-section">
     <h2>Join Timedrift Collective</h2>
   
     <p>We believe the future of game development belongs to solo creators — and the people who support them.<br><br>We’re currently hiring for a few key roles below.</p>
   
-    <div class="job-table">
-      <div class="job-table-header">
-        <span>Position</span>
-        <span>Team</span>
-        <span>Location</span>
-      </div>
-    
-      <div class="job-table-row">
-        <span><a href="talent-scout.html">Talent Scout (Part-Time)</a></span>
-        <span>Outreach</span>
-        <span>Remote</span>
-      </div>
-    
-      <div class="job-table-row">
-        <span><a href="application.html">Creator (Ongoing)</a></span>
-        <span>Games</span>
-        <span>Remote</span>
-      </div>
-    </div>
+    <table class="job-table">
+      <thead>
+        <tr>
+          <th scope="col">Position</th>
+          <th scope="col">Team</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="talent-scout.html">Talent Scout (Part-Time)</a></td>
+          <td>Outreach</td>
+          <td>Remote</td>
+        </tr>
+        <tr>
+          <td><a href="application.html">Creator (Ongoing)</a></td>
+          <td>Games</td>
+          <td>Remote</td>
+        </tr>
+      </tbody>
+    </table>
   
     <div class="creator-hiring">
       <h3>Creator Roles — Always Open</h3>
@@ -72,8 +77,8 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="scroll-animations.js"></script>
-  <script src="mobile-menu.js"></script>
+  <script src="scroll-animations.js" defer></script>
+  <script src="mobile-menu.js" defer></script>
 
 </body>
 </html>

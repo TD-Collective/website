@@ -1,3 +1,7 @@
+:root {
+    --accent-color: #d4af37;
+}
+
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -20,7 +24,7 @@ input[type="text"], input[type="email"], input[type="url"], textarea {
 }
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, textarea:focus {
-    border-color: #d4af37;
+    border-color: var(--accent-color);
     outline: none;
 }
 
@@ -41,7 +45,31 @@ body {
     color: #f0f0f0;
     background-color: #0d0d0d;
     font-size: 18px;
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
   }
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background: var(--accent-color);
+  color: #0d0d0d;
+  text-decoration: none;
+  z-index: 1000;
+}
 
 /* Typography */
 h1, h2, h3 {
@@ -103,7 +131,7 @@ p, li {
 }
 
 .nav-links a:hover {
-    color: #d4af37;
+    color: var(--accent-color);
 }
 
 .mobile-menu-icon {
@@ -131,7 +159,7 @@ p, li {
 }
 
 .mobile-nav-links a:hover {
-    background: #d4af37;
+    background: var(--accent-color);
     color: #0d0d0d;
 }
 
@@ -178,7 +206,7 @@ p, li {
 }
 
 .btn-primary {
-    background-color: #d4af37;
+    background-color: var(--accent-color);
     color: #0d0d0d;
 }
 
@@ -189,12 +217,12 @@ p, li {
 
 .btn-secondary {
     background-color: transparent;
-    border: 2px solid #d4af37;
-    color: #d4af37;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
 }
 
 .btn-secondary:hover {
-    background-color: #d4af37;
+    background-color: var(--accent-color);
     color: #0d0d0d;
     transform: translateY(-3px);
 }
@@ -259,7 +287,7 @@ footer {
 }
 
 .footer-links a {
-    color: #d4af37;
+    color: var(--accent-color);
     text-decoration: none;
 }
 
@@ -311,7 +339,7 @@ footer {
 }
 
 .close-button:hover {
-    color: #d4af37;
+    color: var(--accent-color);
     transform: scale(1.1);
 }
 
@@ -336,7 +364,7 @@ footer {
 }
 
 .nav-apply {
-    background-color: #d4af37;
+    background-color: var(--accent-color);
     color: #0d0d0d;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -352,6 +380,8 @@ footer {
 }
 
 .job-table {
+    width: 100%;
+    border-collapse: collapse;
     max-width: 800px;
     margin: 3rem auto 2rem auto;
     background: #111;
@@ -360,41 +390,30 @@ footer {
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
-.job-table-header {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+.job-table th {
     background-color: #222;
     padding: 1rem 2rem;
     font-weight: bold;
-    color: #d4af37;
+    color: var(--accent-color);
     text-align: left;
 }
 
-.job-table-empty {
-    text-align: center;
-    padding: 2rem;
-    font-style: italic;
-    color: #888;
-}
-
-.job-table-row {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+.job-table td {
     padding: 1rem 2rem;
     border-bottom: 1px solid #333;
     background-color: #0d0d0d;
     text-align: left;
-  }
-  
-  .job-table-row a {
+}
+
+.job-table td a {
     color: #f0f0f0;
     text-decoration: none;
-  }
-  
-  .job-table-row a:hover {
-    color: #d4af37;
+}
+
+.job-table td a:hover {
+    color: var(--accent-color);
     text-decoration: underline;
-  }  
+}
 
 .creator-hiring {
     margin-top: 4rem;
@@ -450,4 +469,40 @@ footer {
   .job-description .btn-primary {
     margin-top: 2rem;
   }
-  
+  @media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .content-section {
+        padding: 4rem 1rem;
+    }
+
+    .services,
+    .steps {
+        gap: 1rem;
+    }
+}
